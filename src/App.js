@@ -1,11 +1,12 @@
-import Form from './components/Form';
+import Meme from './components/Meme';
 import Header from './components/Header';
 
 function App() {
+
   return (
     <>
       <Header />
-      <Form />
+      <Meme />
     </>
   );
 }
