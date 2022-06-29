@@ -118,3 +118,26 @@ input {
 .top {
   top: 0;
 }
+
+
+@media (max-width: 768px) {
+
+  section {
+    padding: 30px 10px;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  ::placeholder {
+    text-align: center;
+  }
+
+  .input-box {
+    flex-direction: column;
+  }
+
+}
