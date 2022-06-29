@@ -11,11 +11,22 @@ export default function Form(props) {
     // eslint-disable-next-line no-unused-vars
     const [allMemes, setAllMemes] = React.useState([])
 
+    // USING FETCH FOR API CALL
     React.useEffect(() => {
         fetch("https://api.imgflip.com/get_memes")
         .then(res => res.json())
         .then(data => setAllMemes(data.data.memes))
     }, [])
+
+    // USING ASYNC AWAIT FOR API CALL
+    // React.useEffect(() => {
+    //     async function getMemes() {
+    //         const res = await fetch("https://api.imgflip.com/get_memes")
+    //         const data = await res.json()
+    //         setAllMemes(data.data.memes)
+    //     }
+    //     getMemes()
+    // }, [])
 
     function getMemeImage() {
         const randomNumber = Math.floor(Math.random() * allMemes.length)
