@@ -2,7 +2,7 @@
   "name": "meme-generator",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://qcode1.github.io/Meme-Generator/public",
+  "homepage": "https://qcode1.github.io/Meme-Generator/build/",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.4",
